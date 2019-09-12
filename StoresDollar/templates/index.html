@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Food Deserts</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom Adobe font -->
+  <link rel="stylesheet" href="https://use.typekit.net/qqf6foz.css" rel="stylesheet" type="text/css">
+  <!-- Default Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../static/css/agency.css" rel="stylesheet">
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Dollar Stores</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+<!--         Menu -->
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#analysis">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#predictions">Predictions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#conclusion">Conclusion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Header -->
+<header class="masthead">
+<div class="container">
+  <div class="intro-text">
+    <div class="intro-lead-in"><p>Unaffordable Access</br>Dollar Stores and the American Food Desert</p></div>
+    <div class="intro-heading text-uppercase"></div>
+    
+  </div>
+</div>
+</header>
+
+  <!-- Overview -->
+  <section class="bg-light page-section" id="overview">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+
+          <h2 class="section-heading text-uppercase">Low Price, High Cost</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-3x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
+
+          <p class="text-muted">In 2018, a number of
+            <a href="https://ilsr.org/dollar-stores-target-cities-towns-one-fights-back/" target="_blank">industry publications</a>
+            and <a
+              href="https://www.chicagotribune.com/business/ct-biz-dollar-stores-help-or-hindrance-20190218-story.html"
+              target="_blank">media
+              sources</a>
+            reported that the growth of dollar stores is driving grocery stores out of business and perpetuating
+            food deserts. City centers and rural areas in which residents already lack access to healthy food
+            are targets for dollar stores.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-3x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-dollar-sign fa-stack-1x fa-inverse"></i>
+          </span>
+          <p class="text-muted">“Today, there are more dollar stores in the United States than all Walmarts
+            and Starbucks combined. These low-priced “small-box” retailers, like Dollar General, offer
+            little to no fresh food—yet they feed more Americans than either Trader Joe’s or Whole Foods,
+            and are gaining on the country’s largest food retailers.” <a
+              href="https://civileats.com/2018/12/17/dollar-stores-are-taking-over-the-grocery-business-and-its-bad-news-for-public-health-and-local-economies/"
+              target="_blank">Civil Eats</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-3x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-globe-americas fa-stack-1x fa-inverse"></i>
+          </span>
+          <p class="text-muted">To test the hypothesis that dollar stores are rising predominantly in
+            food deserts and are driving out grocery stores, our team analyzed geographic and
+            longitudinal data from the US Census Bureau and the USDA.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analysis -->
+  <section class="bg-light page-section" id="analysis">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Analysis</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 portfolio-item">
+          <p class="text-muted">Today, there are at least
+            <a href="https://www.racialjusticeproject.com/wp-content/uploads/sites/30/2012/06/NYLS-Food-Deserts-Report.pdf"
+              target="_blank">
+              23.5 million Americans living in food deserts</a>, low-income areas that lack easy access to grocery
+            stores.<sup>1</sup> In many low access communities, grocery stores are either too far away to allow
+            for regular purchase of perishable fresh food or are located in neighborhoods that are not easy to access by
+            walking or public transportation.
+            <a href="https://www.chicagotribune.com/business/ct-biz-dollar-stores-help-or-hindrance-20190218-story.html"
+              target="_blank">
+              Dollar stores fill in the distance gap</a>
+            in these rural and inner city communities by occupying smaller stores that are closer to low income
+            populations. While dollar stores advertise convenience and affordability, the majority of their food
+            offerings are highly processed items that are low in nutritional value. This makes shopping choices harder
+            for low income families with
+            limited access to transportation.
+            <p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12 portfolio-item">
+          <div class="portfolio-caption">
+            <h4>Food Desert by County</h4>
+            <p class="text-muted">Map of
+              <a href="https://www.ers.usda.gov/data-products/food-access-research-atlas/" target="_blank">USDA data</a>
+              shows the percentage of county population identified as having low access to food. The largest tracts of
+              low food access are in the Mountain Region.
+              Counties with the highest numbers of food desert tracts are in the South and Midwest.
+            </p>
+          </div>
+
+          <div class='tableauPlaceholder' id='viz1566064185455' style='position: relative'><noscript><a href='#'><img
+                  alt=' '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FD&#47;FD_v1&#47;Dashboard1&#47;1_rss.png'
+                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='FD_v1&#47;Dashboard1' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='no' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FD&#47;FD_v1&#47;Dashboard1&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' /></object>
+          </div>
+          <script type='text/javascript'>
+            var divElement = document.getElementById('viz1566064185455');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%'; vizElement.style.maxWidth = '1754px';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            vizElement.style.maxHeight = '1396px'; var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+          </script>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-sm-12 portfolio-item">
+          <div class="portfolio-caption">
+            <h4>Dollar Store Locations</h4>
+            <p class="text-muted">On a national level, dollar stores are more densely located on the Eastern half of the
+              United States. This could be due to population density. Another potential factor is that the Dollar General and the Family Dollar headquarters are located in
+              <a href="https://money.cnn.com/2018/08/30/news/companies/dollar-general-dollar-tree-walmart-target-economy/index.html"
+                target="_blank">Tennessee
+              and North Carolina.</a>
+            </p>
+          </div>
+          <div class='tableauPlaceholder' id='viz1566062675765' style='position: relative'><noscript><a href='#'><img
+                  alt=' '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FD&#47;FD_v1&#47;DollarStoresUSAMap&#47;1_rss.png'
+                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='FD_v1&#47;DollarStoresUSAMap' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='no' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FD&#47;FD_v1&#47;DollarStoresUSAMap&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' /></object></div>
+          <script type='text/javascript'>
+            var divElement = document.getElementById('viz1566062675765');
+            var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);              
+          </script>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-sm-12 portfolio-item">
+            <h3>By the Numbers</h3>
+            <p class="text-muted">Dollar stores – namely Dollar General, Dollar Tree, and Family Dollar – comprise one
+              of the fastest-growing retailers in the U.S.
+              “Dollar General stores went from about 8,828 to 15,370 in the last 10 years, totaling a
+              74% increase. Meanwhile, net income more than quadrupled to $1.59 billion.” 
+                <a href="https://www.hutchnews.com/news/20190811/reno-countys-struggle-with-dollar-stores"
+                target="_blank">Hutch News</a>
+            </p>
+            <br>
+	      </div>
+	  </div>
+
+	<div class="row" style="padding-bottom:100px">  
+	    <div class="col-lg-6 portfolio-item">
+            <h3>Dollar and Grocery Stores</h3>
+            <p class="text-muted">Total number of dollar and grocery stores for counties in which at least 25% of the population has low access to food.<sup>2</sup></p>
+        </div>
+
+          	<!-- Monica's Tableau Bar Chart -->
+			<div class='col-lg-12' class="portfolio-item" id='viz1566611944709'; >
+				<noscript>
+					<a href='#'>
+						<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BarGraph_15666030384200&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+					</a>
+				</noscript>
+				<object class='tableauViz'  style='display:none;'>
+					<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+					<param name='embed_code_version' value='3' /> 
+					<param name='site_root' value='' />
+					<param name='name' value='BarGraph_15666030384200&#47;Dashboard1' />
+					<param name='tabs' value='no' /><param name='toolbar' value='yes' />
+					<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BarGraph_15666030384200&#47;Dashboard1&#47;1.png' /> 
+					<param name='animate_transition' value='yes' />
+					<param name='display_static_image' value='yes' />
+					<param name='display_spinner' value='yes' />
+					<!-- <param name='display_overlay' value='yes' /> -->
+					<param name='display_count' value='yes' />
+					<param name='filter' value='publish=yes' />
+				</object>
+			</div>                
+			<script type='text/javascript'>                    
+				var divElement = document.getElementById('viz1566611944709');                    
+				var vizElement = divElement.getElementsByTagName('object')[0];                    
+					vizElement.style.width='1020px';vizElement.style.height='687px';                    
+				var scriptElement = document.createElement('script');                    
+					scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+					vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+			</script>
+	</div>
+
+    <div class="row" style="padding-bottom:100px">
+		<div class="col-lg-6 portfolio-item">
+          <div class="portfolio-caption">
+            <h3>Growth Over Time</h3>
+            <p class="text-muted">Rate of change for total dollar stores and grocery stores for counties in which at least 25% of the population has low access to food.<sup>2</sup></p>
+          </div>
+	    </div>
+
+			<!-- Monica's line graph-->
+		<div class='col-lg-12' id='viz1566612110335' style='position: relative'>
+				<noscript>
+					<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;LineGraphDollarGroceryStores&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+					</a>
+				</noscript>
+				<object class='tableauViz'  style='display:none;'>
+					<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+					<param name='embed_code_version' value='3' /> 
+					<param name='site_root' value='' />
+					<param name='name' value='LineGraphDollarGroceryStores&#47;Dashboard1' />
+					<param name='tabs' value='no' />
+					<param name='toolbar' value='yes' />
+					<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;LineGraphDollarGroceryStores&#47;Dashboard1&#47;1.png' /> 
+					<param name='animate_transition' value='yes' />
+					<param name='display_static_image' value='yes' />
+					<param name='display_spinner' value='yes' />
+					<param name='display_overlay' value='yes' />
+					<param name='display_count' value='yes' />
+					<param name='filter' value='publish=yes' />
+				</object>
+			</div>                
+			<script type='text/javascript'>                    
+				var divElement = document.getElementById('viz1566612110335');                    
+				var vizElement = divElement.getElementsByTagName('object')[0];                    
+					vizElement.style.width='1060px';vizElement.style.height='687px';                    
+				var scriptElement = document.createElement('script');                    
+					scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+					vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+			</script>
+	</div>
+
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Predictions</h2>
+        </div>
+      </div>
+
+      <!-- Maps by County -->
+      <div class="row">
+        <div class="col-sm-12 portfolio-item">
+          <div class="portfolio-caption">
+            <h4>Machine Learning</h4>
+          </div>
+          <p class="text-muted">In order to see the effects of these businesses on people, all the input data was linked
+            to
+            population. Since the number of residents vary greatly by
+            the geographic size and density of each county, the training data was normalized by calculating the average
+            number of residents serviced per store.</p>
+
+          <p class="text-muted">Since the USDA only releases food access data every five years, 2010 and 2015, machine
+            learning was utilized to fill in the gap years. For every year from 2005 to 2016, the number of people with
+            low access to food in each county was modeled on the average number of customers per stores, employee count
+            and
+            employee compensation.
+          </p>
+          <br>
+
+          <h4>County Level Statistics</h4>
+          <p class="text-muted">Each county exhibits a different trend with more drastic changes in
+            <a href="https://money.cnn.com/2018/08/30/news/companies/dollar-general-dollar-tree-walmart-target-economy/index.html"
+              target="_blank">
+              Texas, Georgia, Alabama, Florida, Tennessee, and North Carolina.</a>
+          </p class="text-muted">
+          
+          <br>
+
+
+          <h5>Please select State and County</h5>
+          <form name="statedropdownList">
+            State:
+            <select name="StateSelection" id="stateDropdown" class="statesel">
+              <option value="" selected="selected"></option>
+            </select>
+          </form>
+
+          <form name="countydropdownList">
+            County:
+            <select name="CountySelection" id="countyDropdown" class="countysel">
+              <option value="" selected="selected"></option>
+            </select>
+          </form>
+          <p class="text-muted">* Not all counties are listed, as some counties were missing data from the original Census source. </p>
+        </div>
+      </div>
+
+      <br>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <h4>Grocery and Dollar Stores</h4>
+            <p class="text-muted">Total count of grocery stores and dollar stores over the years. </p>
+            <br>
+			<div id="graph1" style="padding-right: 60px; max-width:100%;">
+			</div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          	<h4>Low Food Access Population</h4>
+            <p class="text-muted">Total population per county compared to low access population per county over the years.* </p>
+            <div id="graph2" style="padding:40px, max-width:100%;">
+            <p class="text-muted" style="font-size: .75em">*USDA data for low access population was used for 2010 and 2015. Low access estimates for all other years was generated using a machine learning model based on 2015 data. Some machine learning predictions were negative values based on biases of training data. </p>
+          	</div>
+        </div>
+    </div>
+
+
+      <div class="row">
+        <div class="col-sm-12 portfolio-item">
+          <div class="portfolio-caption">
+            <h4>People and Patterns</h4>
+            <p class="text-muted">When we used population as a common denominator between these retailers and people, patterns show that grocery stores and dollar stores target different populations. The grocery store scatter plot shows little connection between number of stores and levels of access. A county can have a lot of stores and still a high percentage of people with limited access to healthy food. This leads us to believe that there are other contributing factors not accounted for such as income, the neighborhoods the stores are situated in and whether adequate transportation is available. The dollar store scatter plot reveals that dollar store tends to concentrate on urban and rural areas in which the 20 to 35 percent of the population lacks access to food.
+            </p>
+
+          </div>
+
+          <br>
+
+          <h4>Grocery Stores by Counties</h4>
+          <div class='tableauPlaceholder' id='viz1566540630237' style='position: relative'><noscript><a href='#'><img
+                  alt=' '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;DollarGrocery_Scatter&#47;GrocerperCap&#47;1_rss.png'
+                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='DollarGrocery_Scatter&#47;GrocerperCap' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;DollarGrocery_Scatter&#47;GrocerperCap&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' /></object></div>
+          <script type='text/javascript'>
+            var divElement = document.getElementById('viz1566540630237');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);              
+          </script>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-sm-12 portfolio-item">
+          <div class="portfolio-caption">
+            <h4>Dollar Stores by Counties</h4>
+          </div>
+          <div class='tableauPlaceholder' id='viz1566540546449' style='position: relative'><noscript><a href='#'><img
+                  alt=' '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2G&#47;2GXBS5KTJ&#47;1_rss.png'
+                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='path' value='shared&#47;2GXBS5KTJ' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;2G&#47;2GXBS5KTJ&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' /></object></div>
+          <script type='text/javascript'>
+            var divElement = document.getElementById('viz1566540546449');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="bg-light page-section" id="conclusion">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Conclusion</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h4> EFFECTS ON PEOPLE</h4>
+          <p class="text-muted"> Through visualizing the connections between grocery stores, dollar stores and food
+            deserts, it is clear to see that people who have
+            limited choices will not benefit from the growth of dollar stores. While some counties are seeing an uptick
+            in grocery stores, the areas that are most at
+            risk are seeing grocery stores stagnate or close while dollar stores are expanding. Dollar stores recognize
+            customer demand for food products, but the
+            future for people living with low access is bleak as
+            <a href="https://money.cnn.com/2018/08/30/news/companies/dollar-general-dollar-tree-walmart-target-economy/index.html"
+              target="_blank">plans
+              to provide nutritional items</a>
+            are up to the stores’ discretions.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h4> Methodology</h4>
+          <p class="text-muted">One of the biggest challenges facing our team is how to parse and filter the data to
+            tell an accurate story. The level of details and selection of time heavily influence the visibility of
+            impact. </p>
+
+          <p class="text-muted">Finding comparable information means matching data that either is lacking in
+            geographical or longitudinal data. One set of information
+            had geographic data down to longitude and latitude, but lacked a time factor. To gather dollar store
+            information over time, we used NAICS codes for
+            businesses categorized at Other General Merchandise. While this category has the dollar store corporations
+            as its top businesses, it also contains some
+            false data for other types of businesses. However, to check for correlations and links between business
+            patterns and livelihood of people, we believe that
+            this data is an appropriate proxy. For more in depth observations, we would factor income, transportation
+            and health information.
+          </p>
+
+		<hr>
+          	<p class="text-muted" style="font-size: .75em"><sup>1</sup> The USDA defines a “low-access community” as an area with at least 500 people and/or at least
+            33 percent
+            of the census tract's population must reside more than one
+            mile from a supermarket or large grocery store.</p>
+
+          	<p class="text-muted" style="font-size: .75em"><sup>2</sup> Grocery store and dollar store data were gathered from the US Census Bureau using NAICS codes
+            for grocery
+            stores and other general merchandise store, a
+            category that is largely comprised of dollar stores.</p>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>Sources</h4>
+          <ul>
+            <li>Location and other data on SNAP authorized dollar stores (2008-2018) compiled Jerry Shannon </li>
+            <li>Number of Dollar Stores compiled by <a href="http://www.statista.com" target="_blank">Statista</a> </li>
+            <li><a
+                href="https://www.google.com/url?q=https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads/&sa=D&ust=1566571037902000&usg=AFQjCNGcdSTXhxKYvY-wZNqgH5UL8I7Saw"
+                target="_blank">
+                USDA</a> Food Environment Atlas Data
+            </li>
+            <li><a href="https://factfinder.census.gov/faces/nav/jsf/pages/community_facts.xhtml" target="_blank">US
+                Census American Fact Finder</a> data
+              matched with <a href="https://www.naics.com/naics-code-description/?code=452319" target="_blank">NAICS
+                codes</a>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="bg-light page-section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Team</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-paint-brush fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4>Bic Vu</h4>
+            <ul class="list-inline social-buttons">
+<!--               <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a> -->
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/bicvudesign/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-globe-americas fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4>Monica Linsangan</h4>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/monica-zulueta-linsangan-3a4a97b">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-desktop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4>Carol Fogel</h4>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/carol-fogel-98b19094/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light page-section" id="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="row align-items-center">
+          <div class="col-sm-12">
+            <span class="copyright"><p class="text-muted" style="font-size: .75em">Copyright &copy; 2019   |  Photo by Chris Waits</p></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../static/js/agency.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="../static/js/Results.js"></script>
+  <script src="../static/js/LineGraphs.js"></script>
+  <script src="../static/js/app.js"></script>
+
+</body>
+
+</html>
